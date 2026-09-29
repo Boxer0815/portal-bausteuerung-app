@@ -58,6 +58,16 @@ module.exports = {
       backendUrl: process.env.BACKEND_URL ?? "http://localhost:3001",
       // Erlaubte Rollen für diese App (kommasepariert oder einzeln)
       erlaubteRollen: (process.env.ERLAUBTE_ROLLEN ?? "monteur,dienstleister").split(","),
+      eas: {
+        projectId: "aa373fb8-eaa2-4b30-b82c-f11a196c13b2",
+      },
+    },
+    owner: "maxboxer",
+    updates: {
+      url: "https://u.expo.dev/aa373fb8-eaa2-4b30-b82c-f11a196c13b2",
+    },
+    runtimeVersion: {
+      policy: "appVersion",
     },
   },
 };

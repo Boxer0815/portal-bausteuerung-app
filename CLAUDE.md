@@ -7,8 +7,10 @@ Expo-App für Monteure und Dienstleister (Termine, Statusmeldungen, Fotos).
 Nach jeder neuen Version immer ein EAS Update auf den Expo-Kanal pushen:
 
 ```bash
-eas update --channel production --message "Beschreibung der Änderungen"
+NODE_OPTIONS="--max-old-space-size=4096" eas update --channel production --message "Beschreibung der Änderungen"
 ```
+
+Hinweis: `NODE_OPTIONS="--max-old-space-size=4096"` ist erforderlich, sonst crasht Metro mit Segfault.
 
 Für den Preview-Kanal (interne Tests):
 
